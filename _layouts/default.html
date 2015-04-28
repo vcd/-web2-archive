@@ -1,0 +1,37 @@
+{% include html-head.html %}
+
+	<body>
+
+		<div class="container">
+
+<!-- Week 1 -->
+			<section>
+				<div class="tabs tabs-style-linetriangle">
+					<nav>
+						<h2>Week 1 : What is User Experience? (UX)</h2>
+						
+						{% include section-nav.html %}
+
+					</nav>
+					
+					<div class="content-wrap">
+						
+						
+						{% for post in site.posts %
+							
+							{{ post.title }}
+											
+						{% endfor %}
+
+					</div><!-- /content -->
+
+				</div><!-- /tabs -->
+			</section>
+
+
+		</div><!-- /container -->
+		
+			{% include scripts.html %}
+
+	</body>
+</html>
